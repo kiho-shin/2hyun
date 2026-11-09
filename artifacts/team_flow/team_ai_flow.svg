@@ -1,55 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="603" viewBox="0 0 1200 603" font-family="'Malgun Gothic','Noto Sans KR','Apple SD Gothic Neo',sans-serif">
-<title>모형시험 DB와 AI 에이전트, 두 축으로 도는 업무 프로그램화</title>
-<rect x="0" y="0" width="1200" height="603" fill="#f6f5f2"/>
-<text x="40.0" y="48.0" font-size="24" fill="#1f2328" font-weight="700">모형시험 DB와 AI 에이전트, 두 축으로 도는 업무 프로그램화</text>
-<text x="40.0" y="76.0" font-size="14" fill="#5b6370">모형시험 DB에서 파생되는 작업을 프로그램 기능으로 만들고 도구를 붙이면, AI 에이전트가 실행하고 결과는 다시 DB에 쌓입니다.</text>
-<path d="M230,165 L970,165 A170,170 0 0 1 970,505 L230,505 A170,170 0 0 1 230,165 Z" fill="none" stroke="#dfe5ee" stroke-width="28"/>
-<path d="M318.0,505 L230,505 A170,170 0 0 1 230,165 L312.0,165" fill="none" stroke="#1d3557" stroke-width="3"/>
-<polygon points="318.0,165 304.0,157.3 304.0,172.7" fill="#1d3557"/>
-<path d="M572.0,165 L622.0,165" fill="none" stroke="#1d3557" stroke-width="3"/>
-<polygon points="628.0,165 614.0,157.3 614.0,172.7" fill="#1d3557"/>
-<path d="M882.0,165 L970,165 A170,170 0 0 1 970,505 L888.0,505" fill="none" stroke="#d9580a" stroke-width="3"/>
-<polygon points="882.0,505 896.0,497.3 896.0,512.7" fill="#d9580a"/>
-<path d="M628.0,505 L578.0,505" fill="none" stroke="#d9580a" stroke-width="3"/>
-<polygon points="572.0,505 586.0,497.3 586.0,512.7" fill="#d9580a"/>
-<circle cx="230" cy="335" r="118" fill="#1d3557"/>
-<text x="230.0" y="295.0" font-size="12.5" fill="#c9d6e8" font-weight="700" text-anchor="middle">데이터 축</text>
-<text x="230.0" y="325.0" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">모형시험 DB</text>
-<text x="230.0" y="353.0" font-size="13" fill="#c9d6e8" text-anchor="middle">POW · 자항 · 반류</text>
-<text x="230.0" y="373.0" font-size="13" fill="#c9d6e8" text-anchor="middle">풍동 · 저항</text>
-<circle cx="970" cy="335" r="118" fill="#d9580a"/>
-<text x="970.0" y="295.0" font-size="12.5" fill="#ffe3cf" font-weight="700" text-anchor="middle">실행 축</text>
-<text x="970.0" y="325.0" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">AI 에이전트</text>
-<text x="970.0" y="353.0" font-size="13" fill="#ffe3cf" text-anchor="middle">사내 LLM</text>
-<text x="970.0" y="373.0" font-size="13" fill="#ffe3cf" text-anchor="middle">Gemma 4 31B</text>
-<rect x="325.0" y="129.0" width="240" height="72" rx="9" fill="#eaf0f8" stroke="#1d3557" stroke-width="1.6"/>
-<text x="445.0" y="161.0" font-size="15.5" fill="#1d3557" font-weight="700" text-anchor="middle">① 파생 작업 프로그램화</text>
-<text x="445.0" y="185.0" font-size="12.5" fill="#5b6370" text-anchor="middle">시험 결과에서 나오는 계산을 기능으로</text>
-<rect x="635.0" y="129.0" width="240" height="72" rx="9" fill="#fdf0e6" stroke="#d9580a" stroke-width="1.6"/>
-<text x="755.0" y="161.0" font-size="15.5" fill="#d9580a" font-weight="700" text-anchor="middle">② 기능마다 도구 붙이기</text>
-<text x="755.0" y="185.0" font-size="12.5" fill="#5b6370" text-anchor="middle">에이전트가 부를 수 있게 등록</text>
-<rect x="635.0" y="469.0" width="240" height="72" rx="9" fill="#fdf0e6" stroke="#d9580a" stroke-width="1.6"/>
-<text x="755.0" y="501.0" font-size="15.5" fill="#d9580a" font-weight="700" text-anchor="middle">③ 에이전트가 도구 실행</text>
-<text x="755.0" y="525.0" font-size="12.5" fill="#5b6370" text-anchor="middle">질문 → 도구 실행 → 결과로 답</text>
-<rect x="325.0" y="469.0" width="240" height="72" rx="9" fill="#eaf0f8" stroke="#1d3557" stroke-width="1.6"/>
-<text x="445.0" y="501.0" font-size="15.5" fill="#1d3557" font-weight="700" text-anchor="middle">④ 결과 저장 · 축적</text>
-<text x="445.0" y="525.0" font-size="12.5" fill="#5b6370" text-anchor="middle">사용자 Apply → 케이스·산출물 기록</text>
-<rect x="372.0" y="222.0" width="456" height="226" rx="10" fill="#ffffff" stroke="#1d3557" stroke-width="1.6"/>
-<text x="600.0" y="252.0" font-size="15" fill="#1d3557" font-weight="700" text-anchor="middle">지금 프로그램화된 기능</text>
-<rect x="388.0" y="274.0" width="207.0" height="34" rx="6" fill="#eaf0f8"/>
-<text x="491.5" y="296.0" font-size="12.5" fill="#1f2328" font-weight="600" text-anchor="middle">Speed Power · EEDI</text>
-<rect x="605.0" y="274.0" width="207.0" height="34" rx="6" fill="#eaf0f8"/>
-<text x="708.5" y="296.0" font-size="12.5" fill="#1f2328" font-weight="600" text-anchor="middle">Rudder Torque</text>
-<rect x="388.0" y="316.0" width="207.0" height="34" rx="6" fill="#eaf0f8"/>
-<text x="491.5" y="338.0" font-size="12.5" fill="#1f2328" font-weight="600" text-anchor="middle">Propeller Weight/MOI</text>
-<rect x="605.0" y="316.0" width="207.0" height="34" rx="6" fill="#eaf0f8"/>
-<text x="708.5" y="338.0" font-size="12.5" fill="#1f2328" font-weight="600" text-anchor="middle">Stock Propeller</text>
-<rect x="388.0" y="358.0" width="207.0" height="34" rx="6" fill="#eaf0f8"/>
-<text x="491.5" y="380.0" font-size="12.5" fill="#1f2328" font-weight="600" text-anchor="middle">LRM CAL · One Shaft · M&amp;S</text>
-<rect x="605.0" y="358.0" width="207.0" height="34" rx="6" fill="#eaf0f8"/>
-<text x="708.5" y="380.0" font-size="12.5" fill="#1f2328" font-weight="600" text-anchor="middle">Deliverables 제공 기록</text>
-<rect x="388.0" y="400.0" width="424" height="34" rx="6" fill="#ffffff" stroke="#5b6370" stroke-width="1.2" stroke-dasharray="5 4"/>
-<text x="600.0" y="422.0" font-size="12.5" fill="#5b6370" font-weight="700" text-anchor="middle">+ 다음 파생 작업도 같은 방식으로</text>
-<text x="40.0" y="579.0" font-size="12" fill="#5b6370">2026-11-09 기준 구현 상태.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="608" viewBox="0 0 1440 608" font-family="'Malgun Gothic','Noto Sans KR','Apple SD Gothic Neo',sans-serif">
+<title>모형시험 DB · 프로그램 기능 · AI 에이전트 순환</title>
+<rect x="0" y="0" width="1440" height="608" fill="#f6f5f2"/>
+<text x="40.0" y="48.0" font-size="24" fill="#1f2328" font-weight="700">모형시험 DB · 프로그램 기능 · AI 에이전트, 세 축으로 도는 업무 프로그램화</text>
+<text x="40.0" y="76.0" font-size="14" fill="#5b6370">모형시험 DB에서 파생되는 작업을 프로그램 기능으로 만들고 도구를 붙이면, 사용자가 묻고 AI 에이전트가 실행합니다. 사용자가 결과를 보고 Apply하면 다시 DB에 쌓입니다.</text>
+<path d="M235,150 L965,150 A180,180 0 0 1 965,510 L235,510 A180,180 0 0 1 235,150 Z" fill="none" stroke="#dfe5ee" stroke-width="28"/>
+<path d="M290.5,510 L235,510 A180,180 0 0 1 235,150 L284.5,150" fill="none" stroke="#1d3557" stroke-width="3"/>
+<polygon points="290.5,150 276.5,142.3 276.5,157.7" fill="#1d3557"/>
+<path d="M544.5,150 L649.5,150" fill="none" stroke="#1d3557" stroke-width="3"/>
+<polygon points="655.5,150 641.5,142.3 641.5,157.7" fill="#1d3557"/>
+<path d="M909.5,150 L965,150 A180,180 0 0 1 965,510 L915.5,510" fill="none" stroke="#d9580a" stroke-width="3"/>
+<polygon points="909.5,510 923.5,502.3 923.5,517.7" fill="#d9580a"/>
+<path d="M655.5,510 L550.5,510" fill="none" stroke="#d9580a" stroke-width="3"/>
+<polygon points="544.5,510 558.5,502.3 558.5,517.7" fill="#d9580a"/>
+<circle cx="235" cy="330" r="115" fill="#1d3557"/>
+<text x="235.0" y="290.0" font-size="12.5" fill="#c9d6e8" font-weight="700" text-anchor="middle">데이터 축</text>
+<text x="235.0" y="320.0" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">모형시험 DB</text>
+<text x="235.0" y="348.0" font-size="13" fill="#c9d6e8" text-anchor="middle">POW · 자항 · 반류</text>
+<text x="235.0" y="368.0" font-size="13" fill="#c9d6e8" text-anchor="middle">풍동 · 저항</text>
+<circle cx="600" cy="330" r="140" fill="#ffffff" stroke="#1d3557" stroke-width="3"/>
+<text x="600.0" y="238.0" font-size="12.5" fill="#5b6370" font-weight="700" text-anchor="middle">기능 축</text>
+<text x="600.0" y="264.0" font-size="20" fill="#1d3557" font-weight="700" text-anchor="middle">프로그램 기능</text>
+<text x="600.0" y="294.0" font-size="13" fill="#1f2328" font-weight="600" text-anchor="middle">Speed Power · EEDI</text>
+<text x="600.0" y="314.0" font-size="13" fill="#1f2328" font-weight="600" text-anchor="middle">Rudder Torque</text>
+<text x="600.0" y="334.0" font-size="13" fill="#1f2328" font-weight="600" text-anchor="middle">Propeller Weight/MOI</text>
+<text x="600.0" y="354.0" font-size="13" fill="#1f2328" font-weight="600" text-anchor="middle">Stock Propeller</text>
+<text x="600.0" y="374.0" font-size="13" fill="#1f2328" font-weight="600" text-anchor="middle">LRM CAL · One Shaft · M&amp;S</text>
+<text x="600.0" y="394.0" font-size="13" fill="#1f2328" font-weight="600" text-anchor="middle">Deliverables 제공 기록</text>
+<text x="600.0" y="422.0" font-size="13" fill="#5b6370" font-weight="700" text-anchor="middle">+ 다음 파생 작업</text>
+<circle cx="965" cy="330" r="115" fill="#d9580a"/>
+<text x="965.0" y="290.0" font-size="12.5" fill="#ffe3cf" font-weight="700" text-anchor="middle">실행 축</text>
+<text x="965.0" y="320.0" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">AI 에이전트</text>
+<text x="965.0" y="348.0" font-size="13" fill="#ffe3cf" text-anchor="middle">사내 LLM</text>
+<text x="965.0" y="368.0" font-size="13" fill="#ffe3cf" text-anchor="middle">Gemma 4 31B</text>
+<circle cx="1330" cy="272" r="24" fill="#3b4350"/>
+<path d="M1286,344 Q1286,304 1330,304 Q1374,304 1374,344 Z" fill="#3b4350"/>
+<text x="1330.0" y="374.0" font-size="19" fill="#1f2328" font-weight="700" text-anchor="middle">사용자</text>
+<text x="1330.0" y="396.0" font-size="12.5" fill="#5b6370" text-anchor="middle">화면 · 채팅으로</text>
+<text x="1330.0" y="414.0" font-size="12.5" fill="#5b6370" text-anchor="middle">묻고, 보고, Apply</text>
+<path d="M1270,308 L1094,308" fill="none" stroke="#3b4350" stroke-width="2.2"/>
+<polygon points="1088.0,308 1100.0,301.4 1100.0,314.6" fill="#3b4350"/>
+<text x="1209.0" y="298.0" font-size="12.5" fill="#3b4350" font-weight="700" text-anchor="middle">질문</text>
+<path d="M1088,352 L1264,352" fill="none" stroke="#3b4350" stroke-width="2.2"/>
+<polygon points="1270.0,352 1258.0,345.4 1258.0,358.6" fill="#3b4350"/>
+<text x="1209.0" y="372.0" font-size="12.5" fill="#3b4350" font-weight="700" text-anchor="middle">결과 확인</text>
+<rect x="297.5" y="114.0" width="240" height="72" rx="9" fill="#eaf0f8" stroke="#1d3557" stroke-width="1.6"/>
+<text x="417.5" y="146.0" font-size="15.5" fill="#1d3557" font-weight="700" text-anchor="middle">① 파생 작업 프로그램화</text>
+<text x="417.5" y="170.0" font-size="12.5" fill="#5b6370" text-anchor="middle">시험 결과에서 나오는 계산을 기능으로</text>
+<rect x="662.5" y="114.0" width="240" height="72" rx="9" fill="#fdf0e6" stroke="#d9580a" stroke-width="1.6"/>
+<text x="782.5" y="146.0" font-size="15.5" fill="#d9580a" font-weight="700" text-anchor="middle">② 기능마다 도구 붙이기</text>
+<text x="782.5" y="170.0" font-size="12.5" fill="#5b6370" text-anchor="middle">에이전트가 부를 수 있게 등록</text>
+<rect x="662.5" y="474.0" width="240" height="72" rx="9" fill="#fdf0e6" stroke="#d9580a" stroke-width="1.6"/>
+<text x="782.5" y="506.0" font-size="15.5" fill="#d9580a" font-weight="700" text-anchor="middle">③ 에이전트가 도구 실행</text>
+<text x="782.5" y="530.0" font-size="12.5" fill="#5b6370" text-anchor="middle">질문 → 도구 실행 → 결과로 답</text>
+<rect x="297.5" y="474.0" width="240" height="72" rx="9" fill="#eaf0f8" stroke="#1d3557" stroke-width="1.6"/>
+<text x="417.5" y="506.0" font-size="15.5" fill="#1d3557" font-weight="700" text-anchor="middle">④ 결과 저장 · 축적</text>
+<text x="417.5" y="530.0" font-size="12.5" fill="#5b6370" text-anchor="middle">사용자 Apply → 케이스·산출물 기록</text>
+<text x="40.0" y="584.0" font-size="12" fill="#5b6370">2026-11-09 기준 구현 상태.</text>
 </svg>
