@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HDM 업무 AI화 흐름</title>
+<title>업무 AI화 흐름</title>
 <style>
 :root {
   --bg: #f6f5f2; --panel: #ffffff; --ink: #1f2328; --muted: #5b6370; --line: #d6d3cc;
@@ -64,32 +64,70 @@ h1 { font-size: 20px; margin: 0 0 4px; }
 .chip.plan { border-style: dashed; color: var(--muted); }
 .steps .to { color: var(--muted); }
 
+.prog { border: 2px solid var(--navy); border-radius: 8px; background: var(--panel); padding: 12px 14px; margin-bottom: 22px; }
+.prog .ptitle { font-weight: 700; color: var(--navy); margin: 0 0 10px; }
+.prog .ptitle small { font-weight: 400; color: var(--muted); font-size: 12px; margin-left: 6px; }
+.pgrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) minmax(0, 1fr); gap: 12px; }
+.pg .gname { font-size: 12px; font-weight: 700; color: var(--muted); margin-bottom: 5px; }
+.feat { background: var(--navy-bg); border-radius: 5px; padding: 5px 9px; margin-bottom: 5px; }
+.feat b { font-weight: 600; font-size: 13px; }
+.feat span { display: block; color: var(--muted); font-size: 11.5px; }
+.feat.doing { background: transparent; border: 1px dashed var(--doing); }
+.feat.doing b::after { content: " · 진행 중"; color: var(--doing); font-size: 11.5px; font-weight: 600; }
+.pg.calc .feats { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 5px; }
+
 .foot { margin-top: 18px; font-size: 12px; color: var(--muted); }
 
 @media (max-width: 720px) {
   .flow { grid-template-columns: minmax(0, 1fr); row-gap: 0; }
   .head { display: none; }
+  .pgrid { grid-template-columns: minmax(0, 1fr); }
   .row { display: block; margin-bottom: 16px; }
   .arrow { height: 22px; }
   .arrow::before { content: "↓"; }
   .arrow span { display: none; }
-  .cell.hdm::before { content: "HDM 기능"; display: block; font-size: 11px; font-weight: 700; color: var(--navy); }
+  .cell.hdm::before { content: "프로그램 기능"; display: block; font-size: 11px; font-weight: 700; color: var(--navy); }
   .cell.ai::before { content: "챗봇 도구"; display: block; font-size: 11px; font-weight: 700; color: var(--accent); }
 }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>선형추진기개발팀 업무 — HDM 기반 AI화 흐름</h1>
-  <p class="sub">업무는 HDM(모형시험 DB 기반 계산 프로그램)의 기능으로 처리하고, AI 챗봇은 그 기능을 도구로 불러 씁니다.</p>
+  <h1>선형추진기개발팀 업무 — 모형시험 DB 기반 AI화 흐름</h1>
+  <p class="sub">업무는 모형시험 DB 기반 계산 프로그램의 기능으로 처리하고, AI 챗봇은 그 기능을 도구로 불러 씁니다.</p>
+
+  <div class="prog">
+    <p class="ptitle">계산 프로그램에 현재 구현된 기능<small>2026-11-09 기준</small></p>
+    <div class="pgrid">
+      <div class="pg">
+        <div class="gname">모형시험</div>
+        <div class="feat"><b>모형시험 해석 DB</b><span>POW · 자항 · 반류 · 풍동 · 저항</span></div>
+      </div>
+      <div class="pg calc">
+        <div class="gname">설계 계산</div>
+        <div class="feats">
+          <div class="feat"><b>Speed Power · EEDI Speed</b><span>시험 기반 속도·마력</span></div>
+          <div class="feat"><b>Rudder Torque</b><span>케이스 · PDF 양식 시트 · 유사선 초기설계</span></div>
+          <div class="feat"><b>Propeller Weight/MOI</b><span>ProDes 엔진 · 선급 Rule Check</span></div>
+          <div class="feat"><b>Stock Propeller</b><span>설계점 · 후보 · 중량</span></div>
+          <div class="feat"><b>LRM CAL · One Shaft · M&amp;S</b><span>엔진 한계선 · 단축 운항</span></div>
+        </div>
+      </div>
+      <div class="pg">
+        <div class="gname">산출물 · 챗봇</div>
+        <div class="feat"><b>Deliverables 제공 기록</b><span>값 · 날짜 · 받는 곳 · 엑셀/PDF</span></div>
+        <div class="feat doing"><b>AI 챗봇</b><span>계산·조회 도구 호출, 화면 이동</span></div>
+      </div>
+    </div>
+  </div>
 
   <div class="flow">
-    <div class="head h-task">팀 업무<small>담당자</small></div><div></div>
-    <div class="head h-hdm">HDM 기능<small>데이터와 계산</small></div><div></div>
+    <div class="head h-task">팀 업무<small>업무표 항목</small></div><div></div>
+    <div class="head h-hdm">프로그램 기능<small>모형시험 DB와 계산</small></div><div></div>
     <div class="head h-ai">AI 챗봇 도구<small>질문 → 도구 호출 → 답</small></div>
 
     <div class="row">
-      <div class="cell task done"><span class="badge done">구현</span><div class="t">추진기 중량 추정 · Rule Check</div><div class="s">김태훈 · 김용준</div></div>
+      <div class="cell task done"><span class="badge done">구현</span><div class="t">추진기 중량 추정 · Rule Check</div></div>
       <div class="arrow"><span>→</span></div>
       <div class="cell hdm"><div class="t">Propeller Weight/MOI · Stock Propeller</div><div class="s">ProDes 엔진 · 선급 Rule Check</div></div>
       <div class="arrow"><span>→</span></div>
@@ -97,7 +135,7 @@ h1 { font-size: 20px; margin: 0 0 4px; }
     </div>
 
     <div class="row">
-      <div class="cell task doing"><span class="badge doing">개선 중</span><div class="t">Rudder Torque · S/G 용량 산정</div><div class="s">배두호 · 김민수</div></div>
+      <div class="cell task doing"><span class="badge doing">개선 중</span><div class="t">Rudder Torque · S/G 용량 산정</div></div>
       <div class="arrow"><span>→</span></div>
       <div class="cell hdm"><div class="t">Rudder Torque</div><div class="s">케이스 · PDF 양식 시트 · 유사선 초기설계</div></div>
       <div class="arrow"><span>→</span></div>
@@ -105,7 +143,7 @@ h1 { font-size: 20px; margin: 0 0 4px; }
     </div>
 
     <div class="row">
-      <div class="cell task doing"><span class="badge doing">일부</span><div class="t">표준선 프로모션 지원</div><div class="s">이상현 · 임호정 · 인경균</div></div>
+      <div class="cell task doing"><span class="badge doing">일부</span><div class="t">표준선 프로모션 지원</div></div>
       <div class="arrow"><span>→</span></div>
       <div class="cell hdm"><div class="t">모형시험 DB · Speed Power</div><div class="s">발표자료 제작 기능은 계획</div></div>
       <div class="arrow"><span>→</span></div>
@@ -113,7 +151,7 @@ h1 { font-size: 20px; margin: 0 0 4px; }
     </div>
 
     <div class="row plan-row">
-      <div class="cell task plan"><span class="badge plan">계획</span><div class="t">선형/추진기 개발 일정 검토</div><div class="s">김기범 · 전현진</div></div>
+      <div class="cell task plan"><span class="badge plan">계획</span><div class="t">선형/추진기 개발 일정 검토</div></div>
       <div class="arrow"><span>→</span></div>
       <div class="cell hdm"><div class="t">개발 일정 검토 (추가)</div><div class="s">입력 필요: 단계별 표준 리드타임</div></div>
       <div class="arrow"><span>→</span></div>
@@ -121,7 +159,7 @@ h1 { font-size: 20px; margin: 0 0 4px; }
     </div>
 
     <div class="row plan-row">
-      <div class="cell task plan"><span class="badge plan">계획</span><div class="t">모형시험 비용 Check-List</div><div class="s">박지인</div></div>
+      <div class="cell task plan"><span class="badge plan">계획</span><div class="t">모형시험 비용 Check-List</div></div>
       <div class="arrow"><span>→</span></div>
       <div class="cell hdm"><div class="t">비용 Check-List (추가)</div><div class="s">입력 필요: 지급 단계별 필요 문서</div></div>
       <div class="arrow"><span>→</span></div>
@@ -129,17 +167,17 @@ h1 { font-size: 20px; margin: 0 0 4px; }
     </div>
   </div>
 
-  <div class="rule"><b>챗봇 원칙</b> — 숫자는 HDM 계산 결과로만 답하고, 저장은 사용자가 Apply로 확정합니다. (사내 LLM 게이트웨이, Gemma 4 31B)</div>
+  <div class="rule"><b>챗봇 원칙</b> — 숫자는 프로그램 계산 결과로만 답하고, 저장은 사용자가 Apply로 확정합니다. (사내 LLM 게이트웨이, Gemma 4 31B)</div>
 
   <div class="steps">
     <span class="lbl">진행 단계</span>
-    <span class="chip done">① 계산 기능 HDM 이식</span><span class="to">→</span>
+    <span class="chip done">① 계산 기능 프로그램 이식</span><span class="to">→</span>
     <span class="chip doing">② 데이터·화면 정리</span><span class="to">→</span>
     <span class="chip doing">③ 챗봇 도구화</span><span class="to">→</span>
     <span class="chip plan">④ 일정 검토·비용 체크리스트 추가</span>
   </div>
 
-  <p class="foot">2026-11-09 기준 HDM v2 상태. 원 표 7건 중 개발 보고서 작성과 Full Specification 검토는 HDM과 연결이 약해 제외했습니다.</p>
+  <p class="foot">2026-11-09 기준 프로그램 상태. 원 표 7건 중 개발 보고서 작성과 Full Specification 검토는 프로그램과 연결이 약해 제외했습니다.</p>
 </div>
 </body>
 </html>
